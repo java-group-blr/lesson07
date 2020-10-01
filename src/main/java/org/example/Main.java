@@ -1,10 +1,19 @@
 package org.example;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import org.example.util.WeatherInfo;
+import java.io.IOException;
 
 public class Main {
-  public static void main(String... args) {
-    WeatherInfo weatherInfo = null;
+
+  private static final Logger logger = LoggerFactory.getLogger(Weather.class);
+
+  public static void main(String... args) throws IOException {
+    Weather weatherInfo = new Weather();
     weatherInfo.getWeatherInfo();
+    logger.info("программа завершена успешно");
+
+
   }
+
 }
