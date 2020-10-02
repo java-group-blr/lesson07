@@ -6,11 +6,10 @@ import java.io.IOException;
 
 public class Main {
 
-  private static final Logger logger = LoggerFactory.getLogger(Weather.class);
-
   public static void main(String... args) throws IOException {
     Weather weatherInfo = new Weather();
     weatherInfo.getWeatherInfo();
+    Logger logger = LoggerFactory.getLogger(Main.class);
     logger.info("программа завершена успешно");
 
 
