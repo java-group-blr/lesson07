@@ -23,7 +23,7 @@ public class Parser implements WeatherInfo{
     private Document page = null;
 
     /**
-     * @return a parsed page for further selection.
+     * @return a parsed via Jsoup page for further selection.
      * @throws IOException if HTML page could not be read.
      */
     private Document getPage() {
