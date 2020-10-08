@@ -16,7 +16,7 @@ public class Parser implements WeatherInfo{
     /**
      * The URL field of HTML page for parsing.
      */
-    final static String GISMETEO_URL = "https://www.gismeteo.by/weather-minsk-4248/";
+    private final static String GISMETEO_URL = "https://www.gismeteo.by/weather-minsk-4248/";
     /**
      * The HTML page that we got parsed.
      */
